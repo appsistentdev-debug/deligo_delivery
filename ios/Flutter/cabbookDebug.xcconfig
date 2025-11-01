@@ -1,0 +1,6 @@
+#include? "Pods/Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig"
+#include "Generated.xcconfig"
+
+ASSET_PREFIX=cabbook
+BUNDLE_NAME=Cab Book Driver
+BUNDLE_DISPLAY_NAME=Cab Book Driver

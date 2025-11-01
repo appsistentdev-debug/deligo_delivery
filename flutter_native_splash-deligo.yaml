@@ -1,0 +1,16 @@
+#fvm flutter pub run flutter_native_splash:create --flavor deligo
+flutter_native_splash:
+  color: "#ffffff"
+  image: "assets/flavors/splash/deligo/app_splash.png"
+  color_dark: "#000000"
+  image_dark: "assets/flavors/splash/deligo/app_splash_dark.png"
+  android_gravity: center
+  ios_content_mode: scaleAspectFill
+  android_12:
+    image: "assets/flavors/splash/deligo/app_splash_12.png"
+    color: "#ffffff"
+    icon_background_color: "#ffffff"
+    
+    image_dark: "assets/flavors/splash/deligo/app_splash_12_dark.png"
+    color_dark: "#000000"
+    icon_background_color_dark: "#000000"

@@ -1,0 +1,200 @@
+{
+    "id": 31,
+    "meta": null,
+    "address_from": "152, Balkishanpur Road, Main Market, Sherkot, Moradabad Division, Uttar Pradesh, 246747, India",
+    "longitude_from": "78.5722169",
+    "latitude_from": "29.3205554",
+    "address_to": "987, Rohini, Delhi, Delhi Division, 110034, India",
+    "longitude_to": "77.1024902",
+    "latitude_to": "28.7040592",
+    "ride_start_at": "2025-07-28 12:06:10",
+    "ride_ends_at": "2025-07-28 12:06:16",
+    "ride_on": "2025-07-28 17:35:00",
+    "is_scheduled": 0,
+    "estimated_pickup_distance": 0,
+    "estimated_pickup_time": 0,
+    "estimated_distance": 213,
+    "final_distance": 1,
+    "estimated_time": 257,
+    "final_time": -0.1024871,
+    "discount": 0,
+    "estimated_fare_subtotal": 671,
+    "estimated_fare_total": 671,
+    "final_fare_subtotal": 203,
+    "final_fare_total": 203,
+    "cancelled_by": null,
+    "cancel_reason": null,
+    "status": "complete",
+    "type": "ride",
+    "vehicle_type": {
+        "id": 12,
+        "meta": {
+            "weight_capacity": "100"
+        },
+        "title": "Ride 1",
+        "base_fare": 200,
+        "distance_charges_per_unit": 1,
+        "time_charges_per_minute": 1,
+        "time_surcharge_per_minute": null,
+        "other_charges": 1,
+        "seats": 1,
+        "type": "ride",
+        "mediaurls": []
+    },
+    "user": {
+        "id": 50,
+        "name": "Emma Wilson",
+        "email": "emma@wilson.com",
+        "username": null,
+        "mobile_number": "+919898989898",
+        "mobile_verified": 1,
+        "is_verified": 0,
+        "active": 1,
+        "language": "en",
+        "notification": {
+            "customer": "2020eb0f-97f6-4fe2-8d1c-1a3fddc70ed5"
+        },
+        "meta": null,
+        "mediaurls": {
+            "images": [
+                {
+                    "default": "https://fastly.picsum.photos/id/615/200/200.jpg?hmac=dtUr9nHZQ2Q9aTaRUG-DbStwQeKUNwxAXn3snkihUI4"
+                }
+            ]
+        },
+        "balance": 999553,
+        "wallet": {
+            "id": 50,
+            "user_id": 50,
+            "balance": 999553,
+            "created_at": "2025-07-24T17:50:58.000000Z",
+            "updated_at": "2025-07-28T12:11:35.000000Z"
+        },
+        "is_following": false,
+        "categories": [],
+        "plan": null,
+        "has_blocked": false,
+        "is_blocked": false,
+        "ratings": 0,
+        "ratings_count": 0,
+        "referral_code": "7qwRkMKb"
+    },
+    "driver": {
+        "id": 20,
+        "meta": null,
+        "is_verified": 1,
+        "is_online": 0,
+        "is_riding": 1,
+        "current_latitude": 29.3205481,
+        "current_longitude": 78.5722519,
+        "distance_remaining": 213000,
+        "vehicletypes": [
+            {
+                "id": 12,
+                "meta": {
+                    "weight_capacity": "100"
+                },
+                "title": "Ride 1",
+                "base_fare": 200,
+                "distance_charges_per_unit": 1,
+                "time_charges_per_minute": 1,
+                "time_surcharge_per_minute": null,
+                "other_charges": 1,
+                "seats": 1,
+                "type": "ride",
+                "mediaurls": []
+            },
+            {
+                "id": 15,
+                "meta": {
+                    "weight_capacity": 0
+                },
+                "title": "Intercity 1",
+                "base_fare": 200,
+                "distance_charges_per_unit": 1,
+                "time_charges_per_minute": 1,
+                "time_surcharge_per_minute": null,
+                "other_charges": 1,
+                "seats": 1,
+                "type": "intercity",
+                "mediaurls": []
+            },
+            {
+                "id": 9,
+                "meta": {
+                    "weight_capacity": "10"
+                },
+                "title": "Package Ride 1",
+                "base_fare": 200,
+                "distance_charges_per_unit": 1,
+                "time_charges_per_minute": 1,
+                "time_surcharge_per_minute": null,
+                "other_charges": 1,
+                "seats": 1,
+                "type": "courier",
+                "mediaurls": []
+            }
+        ],
+        "user": {
+            "id": 54,
+            "name": "Test driver",
+            "email": "test@driver.com",
+            "username": null,
+            "mobile_number": "+917676767676",
+            "mobile_verified": 1,
+            "is_verified": 0,
+            "active": 1,
+            "language": "en",
+            "notification": {
+                "delivery": "0f4989f1-8389-4611-a458-af9b6d759177"
+            },
+            "meta": null,
+            "mediaurls": {
+                "images": [
+                    {
+                        "default": "https://deligo.vtlabs.dev/storage/346/IGNYBLVW_1753703555.jpg"
+                    }
+                ]
+            },
+            "balance": -369,
+            "wallet": {
+                "id": 54,
+                "user_id": 54,
+                "balance": -369,
+                "created_at": "2025-07-28T11:51:12.000000Z",
+                "updated_at": "2025-07-28T12:17:25.000000Z"
+            },
+            "is_following": false,
+            "categories": [],
+            "plan": null,
+            "has_blocked": false,
+            "is_blocked": false,
+            "ratings": 0,
+            "ratings_count": 0,
+            "referral_code": "0JmUv9S1"
+        },
+        "ratings": 5,
+        "ratings_count": 1
+    },
+    "payment": {
+        "id": 90,
+        "payable_id": 31,
+        "payer_id": 50,
+        "amount": 203,
+        "status": "postpaid",
+        "payment_method": {
+            "id": 1,
+            "slug": "cod",
+            "title": "COD",
+            "title_translations": {
+                "en": "COD"
+            },
+            "meta": null,
+            "enabled": 1,
+            "type": "postpaid",
+            "country_code": null
+        }
+    },
+    "created_at": "2025-07-28 12:05:16",
+    "updated_at": "2025-07-28 12:06:16"
+}

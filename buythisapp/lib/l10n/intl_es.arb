@@ -1,0 +1,20 @@
+{
+    "buyThisApp": "Compra esta aplicación",
+    "buyThis": "Compra esto",
+    "templateNow": "Plantilla ahora",
+    "flutterTemplateOnlyNoBackend": "Solo plantilla Flutter, sin backend.",
+    "buyThisAppWith": "Compra esta aplicación con",
+    "completeBackend": "Back-end completo",
+    "fullAppSolutionWithCompleteBackend": "Solución de aplicación completa con Backend completo.",
+    "messageOn": "mensaje en",
+    "developedBy": "Desarrollado por:",
+    "subscribing": "Suscribiendo..!",
+    "subscribed": "Suscrito..!",
+    "emailNotValid": "¡El correo electrónico no es válido!",
+    "somethingWentWrong": "Algo salió mal..!",
+    "stayInTouch": "Mantente en contacto.",
+    "stayConnectedForFuture": "Manténgase conectado para el futuro",
+    "updatesAndNewProducts": "actualizaciones y nuevos productos.",
+    "enterYourEmailAddress": "Ingrese su dirección de correo electrónico",
+    "subscribeNow": "Suscríbase ahora"
+}

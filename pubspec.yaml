@@ -1,0 +1,111 @@
+name: deligo_delivery
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.2 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  flutter_bloc: ^8.1.6
+  shared_preferences: ^2.3.2
+  animation_wrappers: ^3.0.0
+  google_maps_flutter: ^2.9.0
+  flutter_polyline_points: ^2.1.0
+  flutter_rating_bar: ^4.0.1
+  syncfusion_flutter_charts: ^30.1.39
+  slide_to_act: ^2.0.2
+  dotted_border: ^3.1.0
+  flutter_native_splash: ^2.4.6
+  dio: ^5.3.0
+  retrofit: ^4.0.1
+  pretty_dio_logger: ^1.1.1
+  cached_network_image: ^3.3.1
+  json_annotation: ^4.4.0
+  firebase_core: ^3.8.1
+  firebase_auth: ^5.3.4
+  firebase_storage: ^12.3.7
+  firebase_database: ^11.2.0
+  firebase_crashlytics: ^4.2.0 #https://github.com/firebase/flutterfire/issues/10507
+  #flutter_google_places: ^0.3.0
+  flutter_google_places_hoc081098: ^2.0.0
+  #location: ^5.0.1
+  location: ^8.0.1
+  geocoding: ^4.0.0
+  url_launcher: ^6.0.18
+  #file_picker: ^8.1.5
+  image_picker: ^1.0.1
+  photo_view: ^0.15.0
+  onesignal_flutter: ^5.3.4
+  device_info_plus: ^11.1.1
+  marquee_widget: ^1.2.0
+  ndialog: ^4.3.1
+  fluttertoast: ^8.0.8
+  flutter_inappwebview: ^6.0.0
+  image_cropper: ^9.1.0
+  shimmer: ^3.0.0
+  country_code_picker: ^3.1.0
+  focus_detector: ^2.0.1
+  geolocator: ^14.0.2
+  flutter_phoenix: ^1.1.1
+  buy_this_app:
+    path: buythisapp
+  connectivity_plus: ^6.1.5
+  flutter_svg: ^2.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  json_serializable: ^6.8.0
+  build_runner: ^2.4.11
+  retrofit_generator: ^9.6.0
+  flutter_flavorizr: ^2.4.1
+  flutter_launcher_icons: ^0.14.4
+
+#fvm flutter pub get && fvm flutter pub run flutter_flavorizr
+#fvm flutter pub run flutter_native_splash:create --flavor deligo
+
+flavorizr:
+  flavors:
+    deligo:
+      app:
+        name: "YourAppName"
+      android:
+        icon: "assets/flavors/icon/deligo/app_icon.png"
+        applicationId: "com.yourapplicationid"
+        firebase:
+          config: "assets/flavors/firebase/deligo/google-services.json"
+      ios:
+        icon: "assets/flavors/icon/deligo/app_icon.png"
+        bundleId: "com.yourapplicationid"
+        firebase:
+          config: "assets/flavors/firebase/deligo/GoogleService-Info.plist"
+
+flutter:
+  uses-material-design: true
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins/Poppins-Bold.ttf
+        - asset: assets/fonts/Poppins/Poppins-Thin.ttf
+        - asset: assets/fonts/Poppins/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins/Poppins-Light.ttf
+
+  assets:
+    - assets/
+    - assets/account_menu/
+    - assets/bottom_menu/
+    - assets/flavors/
+    - assets/flavors/logo/deligo/
+    - assets/onboarding/

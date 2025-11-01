@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">YourAppName</string>
+    <string name="api_key_google">YourGoogleMApsApiKey</string>
+    <string name="onesignal_notification_accent_color">FF0de8d1</string>
+</resources>

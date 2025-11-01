@@ -1,0 +1,188 @@
+{
+    "id": 7,
+    "notes": null,
+    "meta": null,
+    "subtotal": 520,
+    "taxes": 52,
+    "delivery_fee": 25,
+    "total": 597,
+    "discount": 0,
+    "tip": 0,
+    "order_type": "NORMAL",
+    "type": "ASAP",
+    "is_guest": 0,
+    "scheduled_on": "2025-07-03 09:08:32",
+    "status": "complete",
+    "vendor_id": 22,
+    "user_id": 6,
+    "created_at": "2025-07-03T09:08:32.000000Z",
+    "updated_at": "2025-07-03T09:08:32.000000Z",
+    "products": [
+        {
+            "id": 8,
+            "quantity": 1,
+            "total": 520,
+            "subtotal": null,
+            "order_id": 7,
+            "vendor_product_id": null,
+            "vendor_product": {
+                "id": 164,
+                "price": 500,
+                "sale_price": null,
+                "sale_price_from": null,
+                "sale_price_to": null,
+                "stock_quantity": 100,
+                "stock_low_threshold": 0,
+                "product_id": 3,
+                "vendor_id": 22,
+                "product": {
+                    "id": 3,
+                    "title": "Cheese Burger",
+                    "detail": "Test Product",
+                    "meta": {
+                        "vendor_type": "food"
+                    },
+                    "price": 500,
+                    "owner": "vendor",
+                    "parent_id": null,
+                    "attribute_term_id": null,
+                    "mediaurls": {
+                        "images": [
+                            {
+                                "default": "https://deligo.vtlabs.dev/storage/53/Property-1=burger1.png"
+                            }
+                        ]
+                    },
+                    "created_at": "2025-06-25T16:09:05.000000Z",
+                    "updated_at": "2025-07-03T09:08:33.000000Z"
+                }
+            },
+            "addon_choices": [
+                {
+                    "id": 8,
+                    "addon_choice": {
+                        "id": 30,
+                        "title": "Cheese",
+                        "price": 20,
+                        "product_addon_group_id": 28,
+                        "created_at": "2025-07-03T09:05:06.000000Z",
+                        "updated_at": "2025-07-03T09:05:06.000000Z"
+                    }
+                }
+            ]
+        }
+    ],
+    "vendor": {
+        "id": 22,
+        "name": "Spice Bistro ",
+        "tagline": "Magic of Best Ingredients",
+        "details": "Multi-cuisine Cafe.",
+        "meta": {
+            "time": "10",
+            "document_id": "https://deligo.vtlabs.dev/storage/uploads//QV2Q2C8U_1751527398.jpg",
+            "vendor_type": "food",
+            "closing_time": "23:00",
+            "opening_time": "01:00",
+            "document_license": "https://deligo.vtlabs.dev/storage/uploads//TQ0FHZ60_1751527380.jpg"
+        },
+        "mediaurls": {
+            "images": [
+                {
+                    "default": "https://deligo.vtlabs.dev/storage/301/restaurant-(1).png"
+                }
+            ]
+        },
+        "minimum_order": 1,
+        "delivery_fee": 25,
+        "area": "Delhi NCR",
+        "address": "Delhi, India",
+        "longitude": 77.1024902,
+        "latitude": 28.7040592,
+        "is_verified": 1,
+        "user_id": 37,
+        "created_at": "2025-07-03T05:08:18.000000Z",
+        "updated_at": "2025-07-03T09:08:59.000000Z",
+        "user": {
+            "id": 37,
+            "name": "tVendor",
+            "email": "vendor87@deligo.com",
+            "username": null,
+            "mobile_number": "+918787878787",
+            "mobile_verified": 1,
+            "is_verified": 0,
+            "active": 1,
+            "language": "en",
+            "notification": {
+                "vendor": "1c20f5c0-8a29-4c9e-ace3-9572f59137d6"
+            },
+            "meta": null,
+            "mediaurls": [],
+            "balance": 0,
+            "referral_code": "0ljpu8rf",
+            "bill_amount": null
+        },
+        "plan_sort_order": 100
+    },
+    "user": {
+        "id": 6,
+        "name": "DUserOne",
+        "email": "testuser1@deligo.com",
+        "username": null,
+        "mobile_number": "+919898989898",
+        "mobile_verified": 1,
+        "is_verified": 0,
+        "active": 1,
+        "language": "en",
+        "notification": {
+            "customer": "3ad23c4f-dd18-4abc-95a5-9040808c195d"
+        },
+        "meta": null,
+        "mediaurls": {
+            "images": [
+                {
+                    "default": "https://deligo.vtlabs.dev/storage/167/AYP727KO_1751436775.jpg"
+                }
+            ]
+        },
+        "balance": 1001,
+        "referral_code": "FAINhcWv",
+        "bill_amount": null
+    },
+    "address": {
+        "id": 7,
+        "name": null,
+        "email": null,
+        "mobile": null,
+        "formatted_address": "987, Rohini, Delhi, Delhi Division, 110034, India",
+        "address1": null,
+        "address2": null,
+        "longitude": 77.1024902,
+        "latitude": 28.7040592,
+        "order_id": 7
+    },
+    "source_address": null,
+    "delivery": null,
+    "payment": {
+        "id": 7,
+        "payable_id": 7,
+        "payer_id": 6,
+        "amount": 597,
+        "status": "postpaid",
+        "payment_method": {
+            "id": 1,
+            "slug": "cod",
+            "title": "Cash On Delivery",
+            "title_translations": {
+                "en": "Cash On Delivery"
+            },
+            "meta": null,
+            "enabled": 1,
+            "type": "postpaid",
+            "country_code": null
+        }
+    },
+    "delivery_mode": null,
+    "customer_name": null,
+    "customer_email": null,
+    "customer_mobile": null
+}
