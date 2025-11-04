@@ -1,5 +1,5 @@
 enum Flavor {
-  deligo,
+  delivery,
 }
 
 class F {
@@ -9,29 +9,29 @@ class F {
 
   static String get title {
     switch (appFlavor) {
-      case Flavor.deligo:
-        return 'YourAppName';
+      case Flavor.delivery:
+        return 'Deligo Delivery';
     }
   }
 
   static String get apiBase {
     switch (appFlavor) {
-      case Flavor.deligo:
-        return "https://deligo.vtlabs.dev/";
+      case Flavor.delivery:
+        return "http://10.0.2.2:8000/";
     }
   }
 
   static String get logo {
     switch (appFlavor) {
-      case Flavor.deligo:
-        return "assets/flavors/logo/deligo/logo.png";
+      case Flavor.delivery:
+        return "assets/flavors/logo/delivery/logo.png";
     }
   }
 
   static String get logoLight {
     switch (appFlavor) {
-      case Flavor.deligo:
-        return "assets/flavors/logo/deligo/logo_light.png";
+      case Flavor.delivery:
+        return "assets/flavors/logo/delivery/logo_light.png";
     }
   }
 }

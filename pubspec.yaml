@@ -9,71 +9,67 @@ environment:
   sdk: '>=3.1.2 <4.0.0'
 
 dependencies:
-  flutter:
-    sdk: flutter
-  flutter_localizations:
-    sdk: flutter
-
-  cupertino_icons: ^1.0.8
-  flutter_bloc: ^8.1.6
-  shared_preferences: ^2.3.2
   animation_wrappers: ^3.0.0
-  google_maps_flutter: ^2.9.0
-  flutter_polyline_points: ^2.1.0
-  flutter_rating_bar: ^4.0.1
-  syncfusion_flutter_charts: ^30.1.39
-  slide_to_act: ^2.0.2
-  dotted_border: ^3.1.0
-  flutter_native_splash: ^2.4.6
-  dio: ^5.3.0
-  retrofit: ^4.0.1
-  pretty_dio_logger: ^1.1.1
-  cached_network_image: ^3.3.1
-  json_annotation: ^4.4.0
-  firebase_core: ^3.8.1
-  firebase_auth: ^5.3.4
-  firebase_storage: ^12.3.7
-  firebase_database: ^11.2.0
-  firebase_crashlytics: ^4.2.0 #https://github.com/firebase/flutterfire/issues/10507
-  #flutter_google_places: ^0.3.0
-  flutter_google_places_hoc081098: ^2.0.0
-  #location: ^5.0.1
-  location: ^8.0.1
-  geocoding: ^4.0.0
-  url_launcher: ^6.0.18
-  #file_picker: ^8.1.5
-  image_picker: ^1.0.1
-  photo_view: ^0.15.0
-  onesignal_flutter: ^5.3.4
-  device_info_plus: ^11.1.1
-  marquee_widget: ^1.2.0
-  ndialog: ^4.3.1
-  fluttertoast: ^8.0.8
-  flutter_inappwebview: ^6.0.0
-  image_cropper: ^9.1.0
-  shimmer: ^3.0.0
-  country_code_picker: ^3.1.0
-  focus_detector: ^2.0.1
-  geolocator: ^14.0.2
-  flutter_phoenix: ^1.1.1
   buy_this_app:
     path: buythisapp
+  cached_network_image: ^3.3.1
   connectivity_plus: ^6.1.5
+  country_code_picker: ^3.1.0
+  cupertino_icons: ^1.0.8
+  device_info_plus: ^11.1.1
+  dio: ^5.3.0
+  dotted_border: ^3.1.0
+  firebase_app_check: ^0.3.2+10
+  firebase_auth: ^5.3.4
+  firebase_core: ^3.8.1
+  firebase_crashlytics: ^4.2.0
+  firebase_database: ^11.2.0
+  firebase_storage: ^12.3.7
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.1.6
+  flutter_google_places_hoc081098: ^2.0.0
+  flutter_inappwebview: ^6.0.0
+  flutter_localizations:
+    sdk: flutter
+  flutter_native_splash: ^2.4.6
+  flutter_phoenix: ^1.1.1
+  flutter_polyline_points: ^2.1.0
+  flutter_rating_bar: ^4.0.1
   flutter_svg: ^2.2.1
+  fluttertoast: ^8.0.8
+  focus_detector: ^2.0.1
+  geocoding: ^4.0.0
+  geolocator: ^14.0.2
+  google_maps_flutter: ^2.9.0
+  image_cropper: ^9.1.0
+  image_picker: ^1.0.1
+  json_annotation: ^4.4.0
+  location: ^8.0.1
+  marquee_widget: ^1.2.0
+  ndialog: ^4.3.1
+  onesignal_flutter: ^5.3.4
+  photo_view: ^0.15.0
+  pretty_dio_logger: ^1.1.1
+  retrofit: ^4.0.1
+  shared_preferences: ^2.3.2
+  shimmer: ^3.0.0
+  slide_to_act: ^2.0.2
+  syncfusion_flutter_charts: ^30.1.39
+  url_launcher: ^6.0.18
 
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
-  flutter_lints: ^6.0.0
-  json_serializable: ^6.8.0
   build_runner: ^2.4.11
-  retrofit_generator: ^9.6.0
   flutter_flavorizr: ^2.4.1
   flutter_launcher_icons: ^0.14.4
+  flutter_lints: ^6.0.0
+  flutter_test:
+    sdk: flutter
+  json_serializable: ^6.8.0
+  retrofit_generator: ^9.6.0
 
 #fvm flutter pub get && fvm flutter pub run flutter_flavorizr
 #fvm flutter pub run flutter_native_splash:create --flavor deligo
-
 flavorizr:
   flavors:
     deligo:

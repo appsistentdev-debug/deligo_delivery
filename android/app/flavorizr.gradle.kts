@@ -6,10 +6,10 @@ android.apply {
     flavorDimensions("flavor-type")
 
     productFlavors {
-        create("deligo") {
+        create("delivery") {
             dimension = "flavor-type"
             applicationId = "com.flutter.deligo_delivery"
-            resValue(type = "string", name = "app_name", value = "YourAppName")
+            resValue("string", "app_name", "Deligo Delivery")
         }
     }
 }

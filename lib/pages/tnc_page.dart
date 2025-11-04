@@ -34,7 +34,7 @@ class TncPage extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 20),
         children: [
           const SizedBox(height: 30),
-          F.appFlavor == Flavor.deligo
+          F.appFlavor == Flavor.delivery
               ? SvgPicture.asset(
                   isDark
                       ? 'assets/flavors/logo/deligo/logo_light.svg'

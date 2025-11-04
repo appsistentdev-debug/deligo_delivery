@@ -1,4 +1,4 @@
-package com.flutter.deliq_delivery
+package com.flutter.deligo_delivery
 
 import io.flutter.embedding.android.FlutterActivity
 

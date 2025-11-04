@@ -74,7 +74,7 @@ class _SupportStatefulState extends State<SupportStateful> {
                 child: Column(
                   children: [
                     SizedBox(height: 40),
-                    F.appFlavor == Flavor.deligo
+                    F.appFlavor == Flavor.delivery
                         ? SvgPicture.asset(
                             isDark
                                 ? 'assets/flavors/logo/deligo/logo_light.svg'

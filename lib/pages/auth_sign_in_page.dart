@@ -172,7 +172,7 @@ class SignInUiState extends State<SignInUi> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Center(
-            child: F.appFlavor == Flavor.deligo
+            child: F.appFlavor == Flavor.delivery
                 ? SvgPicture.asset(
                     isDark
                         ? 'assets/flavors/logo/deligo/logo_light.svg'

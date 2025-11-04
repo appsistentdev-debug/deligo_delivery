@@ -15,7 +15,7 @@ class AppConfig {
   static String appName = F.title;
   static String baseUrl = F.apiBase;
   static const String googleApiKey = "AIzaSyBNkC40LLMIkOY-myYT2Vmq12Z0lYBU-tw";
-  static String onesignalAppId = "YourOnesignalAppId";
+  static String onesignalAppId = "dd1e1854-9c3b-4e5c-b6fc-5e224afeb79e";
   static const String languageDefault = "en";
   static const String themeDefault = Constants.themeDark;
   static String demoNumber = "7676767676";

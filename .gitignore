@@ -2,6 +2,7 @@
 .idea/
 .vscode/
 build/
+android/.kotlin/errors/
 ios/Flutter/Flutter.framework
 ios/Flutter/Flutter.podspec
 android/.gradle/
