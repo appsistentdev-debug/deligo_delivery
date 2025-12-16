@@ -191,13 +191,13 @@ class AppCubit extends Cubit<AppState> {
       deliveryProfile = await _repository.getDeliveryProfile(null);
 
       profileMode ??= ProfileMode();
-      profileMode.delivery_profile_id = deliveryProfile?.id;
+      profileMode.delivery_profile_id = deliveryProfile.id;
       profileMode.driver_profile_id = driverProfile.id;
 
       await LocalDataLayer().setProfileMode(profileMode);
 
       return ((profileMode.riding_mode == "delivery" &&
-              deliveryProfile?.meta != null) ||
+              deliveryProfile.meta != null) ||
           (profileMode.riding_mode == "riding" && driverProfile.meta != null));
     } catch (e) {
       if (kDebugMode) {

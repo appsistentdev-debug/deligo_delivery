@@ -1,5 +1,6 @@
 import 'package:deligo_delivery/flavors.dart';
 import 'package:deligo_delivery/localization/languages/english.dart';
+import 'package:deligo_delivery/localization/languages/arabic.dart';
 import 'package:deligo_delivery/localization/languages/french.dart';
 import 'package:deligo_delivery/localization/languages/german.dart';
 import 'package:deligo_delivery/localization/languages/indonesian.dart';
@@ -26,7 +27,7 @@ class AppConfig {
   };
   static final Map<String, AppLanguage> languagesSupported = {
     "en": AppLanguage("English", english()),
-    //"ar": AppLanguage("عربى", arabic()),
+    "ar": AppLanguage("عربى", arabic()), // arabic language integrated by prateek 16th dec 2025
     "de": AppLanguage("Deutsch", german()),
     "pt": AppLanguage("Portugal", portuguese()),
     "fr": AppLanguage("Français", french()),

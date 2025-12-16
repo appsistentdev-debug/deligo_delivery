@@ -9,7 +9,7 @@ android.apply {
         create("delivery") {
             dimension = "flavor-type"
             applicationId = "com.flutter.deligo_delivery"
-            resValue("string", "app_name", "Deligo Delivery")
-        }
+            resValue("string", "app_name", "Deligo Delivery") 
     }
+}
 }
