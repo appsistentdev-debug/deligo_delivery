@@ -8,6 +8,8 @@ import 'package:flutter/services.dart' show rootBundle;
 import 'package:flutter_polyline_points/flutter_polyline_points.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
+import 'package:geolocator/geolocator.dart'; // for location permission update by prateek
+
 // ignore: must_be_immutable
 class MyMapWidget extends StatefulWidget {
   final MyMapData myMapData;
@@ -31,8 +33,6 @@ class MyMapWidget extends StatefulWidget {
 }
 
 
-
-
 class MyMapState extends State<MyMapWidget> with AutomaticKeepAliveClientMixin {
   late MyMapData mapData;
   MarkerId? selectedMarker;
@@ -49,6 +49,29 @@ class MyMapState extends State<MyMapWidget> with AutomaticKeepAliveClientMixin {
     mapData = widget.myMapData;
     super.initState();
   }
+  //updated by prateek 18th dec 2025
+ Future<LatLng> getCurrentLatLng() async {
+  bool serviceEnabled = await Geolocator.isLocationServiceEnabled();
+  if (!serviceEnabled) {
+    throw Exception("Location services are disabled");
+  }
+
+  LocationPermission permission = await Geolocator.checkPermission();
+  if (permission == LocationPermission.denied) {
+    permission = await Geolocator.requestPermission();
+  }
+
+  if (permission == LocationPermission.deniedForever) {
+    throw Exception("Location permission permanently denied");
+  }
+
+  final Position position = await Geolocator.getCurrentPosition(
+    desiredAccuracy: LocationAccuracy.high,
+  );
+
+  return LatLng(position.latitude, position.longitude);
+}
+
 
   @override
   Widget build(BuildContext context) {
@@ -64,10 +87,13 @@ class MyMapState extends State<MyMapWidget> with AutomaticKeepAliveClientMixin {
           GoogleMap(
         initialCameraPosition: CameraPosition(
           target: mapData.center,
-          zoom: mapData.zoomLevel ?? 1.0,
+          zoom: mapData.zoomLevel ?? 15,
         ),
         // gestureRecognizers: Set()
         //   ..add(Factory<PanGestureRecognizer>(() => PanGestureRecognizer())),
+        myLocationEnabled: true, // updated by prateek
+        myLocationButtonEnabled: true,
+
         mapType: MapType.normal,
         style: snapshot.data,
         markers: Set<Marker>.of(mapData.markers.values),
@@ -75,19 +101,48 @@ class MyMapState extends State<MyMapWidget> with AutomaticKeepAliveClientMixin {
         zoomControlsEnabled: mapData.zoomControlsEnabled,
         onTap: (LatLng latLng) => widget.onMapTap(latLng),
 
-        onMapCreated: (GoogleMapController controller) {
-          _googleMapController = controller;
-          // rootBundle
-          //     .loadString(isDark
-          //         ? 'assets/map_style_dark.json'
-          //         : 'assets/map_style.json')
-          //     .then((string) => _googleMapController?.setMapStyle(string));
-          if (mapData.scrollX != null || mapData.scrollY != null) {
-            Future.delayed(const Duration(milliseconds: 500),
-                () => scrollBy(mapData.scrollX ?? 0, mapData.scrollY ?? 0));
-          }
-          if (widget.onBuildComplete != null) widget.onBuildComplete!.call();
-        },
+        // onMapCreated: (GoogleMapController controller) {
+        //   _googleMapController = controller;
+        //   // rootBundle
+        //   //     .loadString(isDark
+        //   //         ? 'assets/map_style_dark.json'
+        //   //         : 'assets/map_style.json')
+        //   //     .then((string) => _googleMapController?.setMapStyle(string));
+        //   if (mapData.scrollX != null || mapData.scrollY != null) {
+        //     Future.delayed(const Duration(milliseconds: 500),
+        //         () => scrollBy(mapData.scrollX ?? 0, mapData.scrollY ?? 0));
+        //   }
+        //   if (widget.onBuildComplete != null) widget.onBuildComplete!.call();
+        // },
+       
+        // update by prateek 18th dec 2025
+        onMapCreated: (GoogleMapController controller) async {
+        _googleMapController = controller;
+
+        try {
+        final LatLng currentLatLng = await getCurrentLatLng();
+
+        _googleMapController?.animateCamera(
+        CameraUpdate.newLatLngZoom(currentLatLng, 16),
+       );
+      } catch (e) {
+    if (kDebugMode) {
+      print("Location error: $e");
+    }
+  }
+
+  if (mapData.scrollX != null || mapData.scrollY != null) {
+    Future.delayed(
+      const Duration(milliseconds: 500),
+      () => scrollBy(mapData.scrollX ?? 0, mapData.scrollY ?? 0),
+    );
+  }
+
+  if (widget.onBuildComplete != null) {
+    widget.onBuildComplete!.call();
+  }
+},
+
       ),
     );
   }
