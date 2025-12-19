@@ -175,7 +175,8 @@ class SignInUiState extends State<SignInUi> {
             child: F.appFlavor == Flavor.delivery
                 ? SvgPicture.asset(
                     isDark
-                        ? 'assets/flavors/logo/deligo/logo_light.svg'
+                        // change logo address svg to png update by prateek 19th dec 2025
+                        ? 'assets/flavors/logo/deligo/logo_light.svg' 
                         : 'assets/flavors/logo/deligo/logo.svg',
                     height: 150,
                     width: 150,
